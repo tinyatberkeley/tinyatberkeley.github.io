@@ -1,0 +1,585 @@
+/* paper wrapper and general section */
+.page-wrapper {
+    height: 100%;
+    width: 100%;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+    position: relative;
+}
+
+.section {
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+
+/* Logo Section */
+
+.cd-header {
+  background-color: black;
+  display: none;
+}
+
+ul.cd-primary-nav {
+  display: none;
+}
+
+#logo-image {
+    position: relative;
+    height: 100px;
+    width: auto;
+    top: 50px;
+}
+
+#logoimage {
+    height: 50px;
+    width: auto;
+    position: absolute;
+    left: calc(50% - 25px);
+}
+
+#main-title {
+    width:  100%;
+    position: relative;
+    top: 10px;
+    font-family: courier;
+}
+
+.name {
+    text-align: center;
+}
+
+#TINY {
+    font-size: 25px;
+    line-height: 1.5;
+}
+
+#Chinese {
+    font-size: 14px;
+}
+
+/* Navigation Section*/
+
+#navigation {
+    width: 100%;
+    position: relative;
+    top: -20px;
+    height: 60px;
+    padding-bottom: 20px;
+}
+
+#nav li a {
+    display: block;
+    padding-bottom: 10px;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 10px;
+    text-decoration: none;
+    color: black;
+    border-right: 1px;
+    border-bottom-width: 5px;
+    border-bottom-style: solid;
+    border-bottom-color: #dedede;
+    font-size: 13px;
+    font-weight: 700;
+    font-family: Helvetica, sans-serif;
+}
+
+#menu li a:hover {
+    border-bottom-color: black;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+
+/* Main */
+#menu {
+    padding: 10px;
+    list-style: none;  
+    background-color: white;
+    margin: auto;
+    width: 85%;
+}
+
+#menu li {
+    float: left;
+    padding: 0 0 10px 0;
+    position: relative;
+}
+
+#menu a {
+    float: left;
+    text-transform: uppercase;
+    font-family: Helvetica;
+    text-decoration: none;
+    padding-bottom: 10px;
+padding-right: 32px;
+    padding-left: 32px;
+    padding-top: 10px;
+    color: black;
+    border-bottom: 5px solid #dedede;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+#menu li a:hover {
+    border-bottom-color: black;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+
+
+#menu li:hover > ul {
+    display: block;
+}
+
+/* Sub-menu */
+#menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;    
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    z-index: 99999;    
+    background-color: black;      
+    width: 160px;
+}
+
+#menu ul li {
+    float: none;
+    margin: 0;
+    display: block;  
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+#menu ul a {    
+    padding: 10px;
+    height: auto;
+    line-height: 1;
+    display: block;
+    float: none;
+    text-transform: none;
+    border-bottom: 0px;
+    color: white;
+}
+
+*html #menu ul a { /* IE6 */   
+    height: 10px;
+    width: 150px;
+}
+
+*:first-child+html #menu ul a { /* IE7 */    
+    height: 10px;
+    width: 150px;
+}
+
+#menu ul a:hover {
+    background-color: white;
+    color:black;
+}
+
+
+#menu ul li:first-child a:after {
+    content: '';
+    position: absolute;
+    left: 30px;
+    top: -8px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 8px solid black;
+}
+
+#menu ul li:first-child a:hover:after {
+    border-bottom-color: black; 
+}
+
+
+/* Clear floated elements */
+#menu:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+* html #menu             { zoom: 1; } /* IE6 */
+*:first-child+html #menu { zoom: 1; } /* IE7 */
+
+
+/* Members Section*/
+
+#Committee_title {
+    padding-bottom: 40px;
+    font-family: Helvatica;
+    font-weight: 900;
+    font-size: 25px;
+    position: relative;
+    text-align: center;
+}
+
+#members {
+    width: 90%;
+    position: relative;
+    left: 5%;
+    height:1300px;
+}
+
+.member_profile {
+    position: relative;
+    display: inline-block;
+    width: 250px;
+    height: 500px;
+    overflow: hidden;
+    padding-right: 25px;
+    vertical-align: top;
+}
+
+#member_pic {
+    position: absolute;
+    height: 250px;
+    width: 250px;
+}
+
+#hover_before {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    left: 25px;
+    border-radius: 10%;
+}
+
+#hover_after {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    opacity:0;
+    left: 25px;
+    border-radius: 10%;
+}
+
+#hover_before:hover {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    left: 25px;
+    opacity: 0;
+}
+
+#hover_after:hover {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    opacity:1;
+    left: 25px;
+}
+
+
+#member_txt {
+  top: 220px;
+  position: relative;
+  font-family: lato;
+  line-height: 1.5;
+  text-align: center;
+}
+
+#committee_name {
+  font-size: 25px;
+  font-weight: 700;
+  padding-bottom: 30px;
+}
+
+/*show more info when click */
+a {
+    color: #0254EB
+}
+a:visited {
+    color: #0254EB
+}
+a.morelink {
+    text-decoration:none;
+    outline: none;
+}
+.morecontent span {
+    display: none;
+}
+.comment {
+    width: 250px;
+
+}
+
+
+/*Footer */
+#footer {
+    position: fixed;
+    background-color: white;
+    opacity: 0.7;
+    bottom: 0px;
+    height: 50px;
+    width: 100%;
+    border-top-style: dashed;
+    border-top-color: #bbbbbb;
+}
+
+.icon {
+    display: inline-block;
+    margin: 4px;
+    width: 40px;
+    height: 40px;
+    font-size: 0px;
+}
+
+@-webkit-keyframes hvr-pulse {
+  25% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+  75% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+}
+
+@keyframes hvr-pulse {
+  25% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+  75% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+}
+
+#icon_img {
+    height: 30px;
+    position: relative;
+    top: 5px;
+}
+
+#icon_img:hover, #icon_img:focus, #icon_img:active  {
+     -webkit-animation-name: hvr-pulse;
+  animation-name: hvr-pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+#find-us {
+    width: 80px;
+    color: #bbbbbb;
+    font-size: 15px;
+    font-family: Helvetica;
+    font-weight: 800;
+    height: 20px;
+}
+
+#icon-line {
+    position: absolute;
+    right: 8%;
+}
+
+@media(min-width:1024px) and (max-width:1216px){
+    #menu a {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+}
+
+@media(min-width:900px) and (max-width:1024px) {
+
+    #menu a {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    #members {
+      height: 1600px;
+    }
+}
+
+@media(min-width:800px) and (max-width:900px) {
+
+    #menu a {
+        padding-right: 12px;
+        padding-left: 12px;
+    }
+}
+
+
+
+@media(min-width:669px) and (max-width:800px) {
+
+    #menu a {
+        padding-right: 8px;
+        padding-left: 8px;
+    }
+}
+
+
+@media(min-width:320px) and (max-width:568px){
+    .cd-header {
+      background-color: black;
+      display:block;
+    }
+
+    .mobile_navi_text {
+      color: white;
+      font-family: Helvetica;
+      position: absolute;
+      top: 15px;
+      right: 45px;
+      font-weight: 900;
+    }
+
+    #logo {
+      position: relative;
+      top: 40px;
+    }
+
+    #navigation {
+      display: none;
+    }
+
+    .cd-primary-nav a {
+      color: white;
+      text-decoration: none;
+      font-family: Helvetica;
+      font-weight: 900;
+    }
+
+    #example5 {
+      padding-top: 30px;
+    }
+
+    #events {
+      position: relative;
+      left: 10px;
+    }
+
+    #txt {
+      font-size: 15px;
+    }
+
+    .title-img {
+      height: 20px;
+      width: 20px;
+    }
+
+    #intro {
+      width: 80%;
+      position: relative;
+      left:10%;
+    }
+
+    .introduction {
+      display: block;
+      padding-bottom: 20px;
+    }
+
+    #footer {
+      position: fixed;
+      bottom: 0px;
+      height:30px;
+    }
+
+    .icon {
+        margin:0px;
+    }
+
+    #icon-line{
+        right:4%;
+    }
+
+    #icon_img{
+        height:20px;
+    }
+
+    .page-wrapper{
+        height:2030px;
+    }
+
+    .cd-header{
+        position: fixed;
+    }
+
+    .cd-primary-nav {
+      display: block;
+    }
+
+    ul.cd-primary-nav.is-visible {
+      top: -10px;
+    }
+
+    .page-content {
+      padding-top: 30px;
+      width: 90%;
+      left: 7%;
+    }
+
+    #general_title {
+      font-size: 20px;
+    }
+
+    #general_content {
+      font-size: 14px;
+    }
+
+    #members {
+      padding-top: 40px;
+    }
+
+    #committee_name {
+      font-size: 20px;
+    }
+
+    ul.cd-primary-nav {
+      display: block;
+      top:-20px;
+    }
+
+    #member_profile{
+      width: 300px;
+    }
+
+    #member_pic{
+      left: 35px;
+    }
+
+
+}
+
+
+/* DOCUMENT SETUP */
+body, html {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    -webkit-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    font-family: Lato;
+}
+
+p {
+    -webkit-margin-after: 0em;
+    -webkit-margin-before: 0em;
+}
+
+.text{
+    line-height:1.5;
+}
